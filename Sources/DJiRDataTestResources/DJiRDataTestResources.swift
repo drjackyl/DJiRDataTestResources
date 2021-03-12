@@ -25,3 +25,9 @@ public enum DJiRDataTestResources {
         public static let Road_Team_SingleClass_NoClubPoints_NoDivision_Race = Bundle.module.url(forResource: basePath + "Road-Team-SingleClass-NoClubPoints-NoDivision-Race", withExtension: "csv")!
     }
 }
+
+extension URL {
+    public func load() -> Data {
+        try! Data(contentsOf: self)
+    }
+}
