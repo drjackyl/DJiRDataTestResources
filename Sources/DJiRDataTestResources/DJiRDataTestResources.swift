@@ -24,6 +24,13 @@ public enum DJiRDataTestResources {
         public static let Road_Team_SingleClass_NoClubPoints_NoDivision_Qualify = Bundle.module.url(forResource: basePath + "Road-Team-SingleClass-NoClubPoints-NoDivision-Qualify", withExtension: "csv")!
         public static let Road_Team_SingleClass_NoClubPoints_NoDivision_Race = Bundle.module.url(forResource: basePath + "Road-Team-SingleClass-NoClubPoints-NoDivision-Race", withExtension: "csv")!
     }
+    
+    public enum CSVSeasonStandings {
+        private static let basePath = DJiRDataTestResources.basePath + "CSVSeasonStandings/"
+        
+        static let SeasonStandings_Season = Bundle.module.url(forResource: basePath + "SeasonStandings-Season", withExtension: "csv")!
+        static let SeasonStandings_Week = Bundle.module.url(forResource: basePath + "SeasonStandings-Week", withExtension: "csv")!
+    }
 }
 
 extension URL {

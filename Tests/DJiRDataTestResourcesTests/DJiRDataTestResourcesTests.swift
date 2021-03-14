@@ -3,6 +3,8 @@ import XCTest
 
 final class DJiRDataTestResourcesTests: XCTestCase {
     
+    // MARK: - CSVEventResult
+    
     func test_CSVEventResult_InvalidSummary() {
         let url = DJiRDataTestResources.CSVEventResult.InvalidSummary
         _ = url.load()
@@ -85,6 +87,18 @@ final class DJiRDataTestResourcesTests: XCTestCase {
     
     func test_CSVEventResult_Road_Team_SingleClass_NoClubPoints_NoDivision_Race() {
         let url = DJiRDataTestResources.CSVEventResult.Road_Team_SingleClass_NoClubPoints_NoDivision_Race
+        _ = url.load()
+    }
+    
+    // MARK: - CSVSeasonStandings
+    
+    func test_SeasonStandings_Season() {
+        let url = DJiRDataTestResources.CSVSeasonStandings.SeasonStandings_Season
+        _ = url.load()
+    }
+    
+    func test_SeasonStandings_Week() {
+        let url = DJiRDataTestResources.CSVSeasonStandings.SeasonStandings_Week
         _ = url.load()
     }
     
