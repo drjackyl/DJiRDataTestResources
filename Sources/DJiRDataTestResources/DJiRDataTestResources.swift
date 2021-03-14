@@ -28,8 +28,8 @@ public enum DJiRDataTestResources {
     public enum CSVSeasonStandings {
         private static let basePath = DJiRDataTestResources.basePath + "CSVSeasonStandings/"
         
-        static let SeasonStandings_Season = Bundle.module.url(forResource: basePath + "SeasonStandings-Season", withExtension: "csv")!
-        static let SeasonStandings_Week = Bundle.module.url(forResource: basePath + "SeasonStandings-Week", withExtension: "csv")!
+        public static let SeasonStandings_Season = Bundle.module.url(forResource: basePath + "SeasonStandings-Season", withExtension: "csv")!
+        public static let SeasonStandings_Week = Bundle.module.url(forResource: basePath + "SeasonStandings-Week", withExtension: "csv")!
     }
 }
 
