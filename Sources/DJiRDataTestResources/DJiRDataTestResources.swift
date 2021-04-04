@@ -31,6 +31,12 @@ public enum DJiRDataTestResources {
         public static let SeasonStandings_Season = Bundle.module.url(forResource: basePath + "SeasonStandings-Season", withExtension: "csv")!
         public static let SeasonStandings_Week = Bundle.module.url(forResource: basePath + "SeasonStandings-Week", withExtension: "csv")!
     }
+    
+    public enum JSONGenericModel {
+        private static let basePath = DJiRDataTestResources.basePath + "JSONGenericModel/"
+        
+        public static let SeriesRaceResults_IMSA2021s2w1 = Bundle.module.url(forResource: basePath + "SeriesRaceResults-IMSA2021s2w1", withExtension: "json")!
+    }
 }
 
 extension URL {
