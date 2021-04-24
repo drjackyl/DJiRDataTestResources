@@ -102,4 +102,24 @@ final class DJiRDataTestResourcesTests: XCTestCase {
         _ = url.load()
     }
     
+    // MARK: - JSONGenericModel
+    
+    func test_SeriesRaceResults_IMSA2021s2w1() {
+        let url = DJiRDataTestResources.JSONGenericModel.SeriesRaceResults_IMSA2021s2w1
+        _ = url.load()
+    }
+    
+    // MARK: - SessionDrivers
+    
+    func test_SessionDrivers_38483422_N242021_Split14_20() {
+        let url = DJiRDataTestResources.SessionDrivers.SessionDrivers_38483422_N242021_Split14_20
+        _ = url?.load()
+    }
+    
+    // MARK: - SpectatorSessions
+    
+    func test_SpectatorSessions_20210424_N242021() {
+        let url = DJiRDataTestResources.SpectatorSessions.GetSpectatorSessions_Road_20210424_N24
+        _ = url?.load()
+    }
 }

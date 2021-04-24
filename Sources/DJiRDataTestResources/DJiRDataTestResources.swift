@@ -37,6 +37,18 @@ public enum DJiRDataTestResources {
         
         public static let SeriesRaceResults_IMSA2021s2w1 = Bundle.module.url(forResource: basePath + "SeriesRaceResults-IMSA2021s2w1", withExtension: "json")!
     }
+    
+    public enum SessionDrivers {
+        private static let basePath = DJiRDataTestResources.basePath + "SessionDrivers/"
+        
+        public static let SessionDrivers_38483422_N242021_Split14_20 = Bundle.module.url(forResource: basePath + "GetSessionDrivers-38483422-N24-2021-split14-20", withExtension: "json")
+    }
+    
+    public enum SpectatorSessions {
+        private static let basePath = DJiRDataTestResources.basePath + "SpectatorSessions/"
+        
+        public static let SpectatorSessions_20210424_N242021 = Bundle.module.url(forResource: "GetSpectatorSessions-20210424-N24", withExtension: "json")
+    }
 }
 
 extension URL {
