@@ -38,16 +38,19 @@ public enum DJiRDataTestResources {
         public static let SeriesRaceResults_IMSA2021s2w1 = Bundle.module.url(forResource: basePath + "SeriesRaceResults-IMSA2021s2w1", withExtension: "json")!
     }
     
-    public enum SessionDrivers {
-        private static let basePath = DJiRDataTestResources.basePath + "SessionDrivers/"
-        
-        public static let SessionDrivers_38483422_N242021_Split14_20 = Bundle.module.url(forResource: basePath + "GetSessionDrivers-38483422-N24-2021-split14-20", withExtension: "json")
-    }
-    
     public enum SpectatorSessions {
         private static let basePath = DJiRDataTestResources.basePath + "SpectatorSessions/"
         
-        public static let SpectatorSessions_20210424_N242021 = Bundle.module.url(forResource: "GetSpectatorSessions-20210424-N24", withExtension: "json")
+        public static let SpectatorSessions_Road_20210424_N242021 = Bundle.module.url(forResource: basePath + "GetSpectatorSessions-Road-20210424-N24", withExtension: "json")!
+        public static let SpectatorSessions_Road_20210725_Spa242021 = Bundle.module.url(forResource: basePath + "GetSpectatorSessions-Road-20210725-Spa24", withExtension: "json")!
+    }
+    
+    public enum SessionDrivers {
+        private static let basePath = DJiRDataTestResources.basePath + "SessionDrivers/"
+        
+        public static let SessionDrivers_38483422_N242021_Split14_20 = Bundle.module.url(forResource: basePath + "GetSessionDrivers-38483422-N24-2021-split14-20", withExtension: "json")!
+        public static let SessionDrivers_39841506_Spa242021_Split1_18 = Bundle.module.url(forResource: basePath + "GetSessionDrivers-39841506-Spa24-2021-split1-18", withExtension: "json")!
+        public static let SessionDrivers_39838721_Spa242021_Split2_5 = Bundle.module.url(forResource: basePath + "GetSessionDrivers-39838721-Spa24-2021-split2-5", withExtension: "json")!
     }
 }
 
