@@ -22,7 +22,7 @@ let package = Package(
             name: "DJiRDataTestResources",
             dependencies: [],
             resources: [
-                .copy("Resources")
+                .copy("Data")
             ]),
         .testTarget(
             name: "DJiRDataTestResourcesTests",

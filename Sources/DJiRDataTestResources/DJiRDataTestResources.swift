@@ -1,7 +1,7 @@
 import Foundation
 
 public enum DJiRDataTestResources {
-    private static let basePath = "Resources/"
+    private static let basePath = "Data/"
     
     public enum CSVEventResult {
         private static let basePath = DJiRDataTestResources.basePath + "CSVEventResult/"
