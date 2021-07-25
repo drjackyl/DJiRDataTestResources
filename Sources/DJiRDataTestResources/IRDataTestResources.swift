@@ -1,10 +1,10 @@
 import Foundation
 
-public enum DJiRDataTestResources {
+public enum IRDataTestResources {
     private static let basePath = "Data/"
     
     public enum CSVEventResult {
-        private static let basePath = DJiRDataTestResources.basePath + "CSVEventResult/"
+        private static let basePath = IRDataTestResources.basePath + "CSVEventResult/"
         
         public static let InvalidSummary = Bundle.module.url(forResource: basePath + "InvalidSummary", withExtension: "csv")!
         public static let InvalidResults = Bundle.module.url(forResource: basePath + "InvalidResults", withExtension: "csv")!
@@ -26,27 +26,27 @@ public enum DJiRDataTestResources {
     }
     
     public enum CSVSeasonStandings {
-        private static let basePath = DJiRDataTestResources.basePath + "CSVSeasonStandings/"
+        private static let basePath = IRDataTestResources.basePath + "CSVSeasonStandings/"
         
         public static let SeasonStandings_Season = Bundle.module.url(forResource: basePath + "SeasonStandings-Season", withExtension: "csv")!
         public static let SeasonStandings_Week = Bundle.module.url(forResource: basePath + "SeasonStandings-Week", withExtension: "csv")!
     }
     
     public enum JSONGenericModel {
-        private static let basePath = DJiRDataTestResources.basePath + "JSONGenericModel/"
+        private static let basePath = IRDataTestResources.basePath + "JSONGenericModel/"
         
         public static let SeriesRaceResults_IMSA2021s2w1 = Bundle.module.url(forResource: basePath + "SeriesRaceResults-IMSA2021s2w1", withExtension: "json")!
     }
     
     public enum SpectatorSessions {
-        private static let basePath = DJiRDataTestResources.basePath + "SpectatorSessions/"
+        private static let basePath = IRDataTestResources.basePath + "SpectatorSessions/"
         
         public static let SpectatorSessions_Road_20210424_N242021 = Bundle.module.url(forResource: basePath + "GetSpectatorSessions-Road-20210424-N24", withExtension: "json")!
         public static let SpectatorSessions_Road_20210725_Spa242021 = Bundle.module.url(forResource: basePath + "GetSpectatorSessions-Road-20210725-Spa24", withExtension: "json")!
     }
     
     public enum SessionDrivers {
-        private static let basePath = DJiRDataTestResources.basePath + "SessionDrivers/"
+        private static let basePath = IRDataTestResources.basePath + "SessionDrivers/"
         
         public static let SessionDrivers_38483422_N242021_Split14_20 = Bundle.module.url(forResource: basePath + "GetSessionDrivers-38483422-N24-2021-split14-20", withExtension: "json")!
         public static let SessionDrivers_39841506_Spa242021_Split1_18 = Bundle.module.url(forResource: basePath + "GetSessionDrivers-39841506-Spa24-2021-split1-18", withExtension: "json")!
