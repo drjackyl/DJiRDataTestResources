@@ -102,4 +102,39 @@ final class DJiRDataTestResourcesTests: XCTestCase {
         _ = url.load()
     }
     
+    // MARK: - JSONGenericModel
+    
+    func test_SeriesRaceResults_IMSA2021s2w1() {
+        let url = DJiRDataTestResources.JSONGenericModel.SeriesRaceResults_IMSA2021s2w1
+        _ = url.load()
+    }
+    
+    // MARK: - SpectatorSessions
+    
+    func test_SpectatorSessions_20210424_N242021() {
+        let url = DJiRDataTestResources.SpectatorSessions.SpectatorSessions_Road_20210424_N242021
+        _ = url.load()
+    }
+
+    func test_SpectatorSessions_Road_20210725_Spa242021() {
+        let url = DJiRDataTestResources.SpectatorSessions.SpectatorSessions_Road_20210725_Spa242021
+        _ = url.load()
+    }
+    
+    // MARK: - SessionDrivers
+    
+    func test_SessionDrivers_38483422_N242021_Split14_20() {
+        let url = DJiRDataTestResources.SessionDrivers.SessionDrivers_38483422_N242021_Split14_20
+        _ = url.load()
+    }
+    
+    func test_SessionDrivers_39841506_Spa242021_Split1_18() {
+        let url = DJiRDataTestResources.SessionDrivers.SessionDrivers_39841506_Spa242021_Split1_18
+        _ = url.load()
+    }
+    
+    func test_SessionDrivers_39838721_Spa242021_Split2_5() {
+        let url = DJiRDataTestResources.SessionDrivers.SessionDrivers_39838721_Spa242021_Split2_5
+        _ = url.load()
+    }
 }
